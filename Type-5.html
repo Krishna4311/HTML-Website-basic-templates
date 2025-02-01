@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type 5: Masonry Layout with Varying Sizes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer, div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        header {
+            background-color: #59666f;
+            height: 10vh;
+            color: #FFF6EA;
+            padding: 10px;
+        }
+
+        /* Type 5: Masonry Layout */
+        .masonry-container {
+            display: block;
+            column-count: 3; /* 3 columns */
+            column-gap: 20px; /* Gap between columns */
+            padding: 10px;
+        }
+
+        .masonry-item {
+            background-color: #DDD;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #B0B0B0;
+            margin-bottom: 20px;
+            break-inside: avoid-column;
+            border-radius: 5px;
+        }
+
+        .masonry-item:nth-child(1) {
+            height: 150px;
+        }
+
+        .masonry-item:nth-child(2) {
+            height: 200px;
+        }
+
+        .masonry-item:nth-child(3) {
+            height: 180px;
+        }
+
+        .masonry-item:nth-child(4) {
+            height: 250px;
+        }
+
+        .masonry-item:nth-child(5) {
+            height: 220px;
+        }
+
+        .masonry-item:nth-child(6) {
+            height: 300px;
+        }
+
+        .masonry-item:nth-child(7) {
+            height: 180px;
+        }
+
+        .masonry-item:nth-child(8) {
+            height: 160px;
+        }
+
+        .masonry-item:nth-child(9) {
+            height: 230px;
+        }
+
+        footer {
+            background-color: #59666f;
+            height: 10vh;
+            color: #FFF6EA;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>HEADER</div>
+    </header>
+
+    <!-- Type 5: Masonry Layout for Main Section -->
+    <div class="masonry-container">
+        <div class="masonry-item">Section 1</div>
+        <div class="masonry-item">Section 2</div>
+        <div class="masonry-item">Section 3</div>
+        <div class="masonry-item">Section 4</div>
+        <div class="masonry-item">Section 5</div>
+        <div class="masonry-item">Section 6</div>
+        <div class="masonry-item">Section 7</div>
+        <div class="masonry-item">Section 8</div>
+        <div class="masonry-item">Section 9</div>
+    </div>
+
+    <footer>
+        <div>FOOTER</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type 6: A 9x9 Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header, footer, div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        header {
+            background-color: #59666f;
+            height: 10vh;
+            color: #FFF6EA;
+            padding: 10px;
+        }
+
+        /* A 9x9 Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(3, 1fr); /* 3 rows */
+            height: auto;
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-item {
+            background-color: #DDD;
+            padding: 50%;
+            text-align: center;
+            border: 1px solid #B0B0B0;
+        }
+
+        footer {
+            background-color: #59666f;
+            height: 10vh;
+            color: #FFF6EA;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>HEADER</div>
+    </header>
+
+    <!-- Type 6: 9x9 Grid for Main Section -->
+    <div class="grid-container">
+        <div class="grid-item">Section 1</div>
+        <div class="grid-item">Section 2</div>
+        <div class="grid-item">Section 3</div>
+        <div class="grid-item">Section 4</div>
+        <div class="grid-item">Section 5</div>
+        <div class="grid-item">Section 6</div>
+        <div class="grid-item">Section 7</div>
+        <div class="grid-item">Section 8</div>
+        <div class="grid-item">Section 9</div>
+    </div>
+
+    <footer>
+        <div>FOOTER</div>
+    </footer>
+</body>
+</html>

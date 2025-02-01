@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type 7</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header, footer, div, aside,.MS {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            background-color: #59666f;
+            height: 10vh;
+            color: #FFF6EA;
+            position: relative;
+        }
+        nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .dropdown a {
+            color: #FFF6EA;
+            text-decoration: none;
+            font-size: 20px;
+            padding: auto;
+            margin: 0;
+            background-color: #59666f;
+            border: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            background-color: #59666f;
+            width: 100%;
+            display: none;
+            border-radius: 5px;
+        }
+        .dropdown:hover ul {
+            display: block;
+            width: 100%;
+        }
+        li {
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+        li a {
+            display: block;
+            color: #FFF6EA;
+            text-decoration: none;
+            width: 100%;
+            padding: 5px 0;
+
+
+        }
+        li a:hover {
+            background-color: #FFDDCC;
+            color: #59666f;
+        }
+        .MS {
+            background-color: #FFF6EA;
+            height: 80vh;
+            float: left;
+            width: 70%;
+        }
+        aside {
+            background-color: #FFDDCC;
+            height: 80vh;
+        }
+        footer {
+            background-color: #59666f;
+            height: 10vh;
+            color: #FFF6EA;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <div><a href="#">Menu</a></div>
+                <ul>
+                    <li><a href="#">Menu-Item 1</a></li>
+                    <li><a href="#">Menu-Item 2</a></li>
+                    <li><a href="#">Menu-Item 3</a></li>
+                    <li><a href="#">Menu-Item 4</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="MS">MAIN SECTION</div>
+    <aside>ASIDE</aside>
+    <footer>FOOTER</footer>
+</body>
+</html>
